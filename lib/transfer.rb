@@ -12,9 +12,10 @@ class Transfer
   end 
   
   def execute_transaction
-    if @sender.
-    @sender.balance -= @amount 
-    @receiver.balance += @amount
+    if @sender.valid? 
+    @sender.balance -= @amount & @receiver.balance += @amount
+  else 
+    ""
   end 
   
   def reverse_transfer
