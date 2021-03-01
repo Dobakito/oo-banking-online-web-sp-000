@@ -12,7 +12,7 @@ class Transfer
   end 
   
   def execute_transaction
-    if sender.close_account
+    if sender.
       sender.balance -= amount
       receiver.balance += amount
       @status = "complete"
