@@ -12,7 +12,7 @@ class Transfer
   end 
   
   def execute_transaction
-    if !sender.closed
+    if 
     
     else 
     "Transaction rejected. Please check your account balance."
